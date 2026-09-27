@@ -1,0 +1,77 @@
+:root {
+  --ink: #142033;
+  --muted: #5c6b7a;
+  --paper: #f3f6f8;
+  --card: #ffffff;
+  --line: #d5dee6;
+  --accent: #0f6e6b;
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-dm), "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+}
+a { color: inherit; }
+.shell { min-height: 100vh; display: flex; flex-direction: column; }
+.nav, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+.nav { background: var(--ink); color: white; }
+.nav nav, .footer p { display: flex; gap: 1rem; margin: 0; }
+.wordmark { font-family: var(--font-display); font-size: 1.4rem; text-decoration: none; }
+.nav a { color: white; text-decoration: none; }
+main { flex: 1; }
+.hero, .band, .contact-page { padding: 4rem 1.5rem; max-width: 1100px; margin: 0 auto; }
+.hero h1, .contact-page h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.9;
+  margin: 0 0 1rem;
+  font-weight: 560;
+}
+.lede { font-size: 1.2rem; max-width: 38rem; color: var(--muted); }
+.button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+}
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 0 1.5rem 4rem; max-width: 1100px; margin: 0 auto; }
+.cards article, .contact-page form, .panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1.25rem;
+}
+.cards h2 { font-family: var(--font-display); margin-top: 0; }
+.footer { border-top: 1px solid var(--line); background: white; }
+label { display: grid; gap: 0.35rem; margin-bottom: 0.8rem; }
+input, textarea {
+  font: inherit;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+}
+button {
+  font: inherit;
+  background: var(--ink);
+  color: white;
+  border: 0;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+.form-success { background: #e7f6f2; padding: 1rem; }
+@media (max-width: 800px) {
+  .cards { grid-template-columns: 1fr; }
+}
