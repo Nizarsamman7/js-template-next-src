@@ -1,18 +1,48 @@
-# Next.js src/app starter
+# Template library
 
-Architectural template for a marketing site. Routes, components, and copy are split the same way as a multi-page brand site:
+Clear map of the starter repos. Business sites are full sample websites. The two WordPress repos and the two Next.js repos are empty structures you copy when a job does not match one of the businesses.
 
-- `src/app` for routes
-- `src/components/layout` for header, footer, and page chrome
-- `src/components/home` for homepage sections
-- `src/data/site.ts` for copy
-- `@/*` points at `src/*`
+All of them live under [github.com/Nizarsamman7](https://github.com/Nizarsamman7).
 
-## Run
+## Pick one
+
+| If you are building | Start here |
+| --- | --- |
+| A Gutenberg site made of full-page blocks | [wp-plugin-template-blocks](https://github.com/Nizarsamman7/wp-plugin-template-blocks) |
+| A plugin with a post type, settings, and a shortcode | [wp-plugin-template-classic](https://github.com/Nizarsamman7/wp-plugin-template-classic) |
+| A Next.js marketing site, code under `src/` | [js-template-next-src](https://github.com/Nizarsamman7/js-template-next-src) |
+| A Next.js business site, routes next to `app/` | [js-template-next-app](https://github.com/Nizarsamman7/js-template-next-app) |
+| A barbershop | [ui-barber-atelier](https://github.com/Nizarsamman7/ui-barber-atelier) |
+| A supermarket | [ui-supermarket-markt](https://github.com/Nizarsamman7/ui-supermarket-markt) |
+| An auto garage | [ui-autogarage-pitlane](https://github.com/Nizarsamman7/ui-autogarage-pitlane) |
+| A cafe | [ui-cafe-lumen](https://github.com/Nizarsamman7/ui-cafe-lumen) |
+| A dental clinic | [ui-dental-helder](https://github.com/Nizarsamman7/ui-dental-helder) |
+| A law firm | [ui-law-veld](https://github.com/Nizarsamman7/ui-law-veld) |
+| A gym | [ui-gym-forge](https://github.com/Nizarsamman7/ui-gym-forge) |
+| A florist | [ui-florist-stem](https://github.com/Nizarsamman7/ui-florist-stem) |
+| A restaurant | [ui-restaurant-hearth](https://github.com/Nizarsamman7/ui-restaurant-hearth) |
+| An estate agency | [ui-realty-linen](https://github.com/Nizarsamman7/ui-realty-linen) |
+
+## Run a Next.js template
 
 ```bash
 npm install
 npm run dev
 ```
 
-Rename the package, replace `site.ts`, and add routes as folders under `src/app`. This starter has no database, auth, or payment code.
+Open http://localhost:3000. Each business README lists every route.
+
+## What you still have to add
+
+Forms confirm in the browser only. There is no database, payment, or email. Replace the sample names and prices before a real launch.
+
+## This repo
+
+Next.js marketing starter. Routes live in `src/app`. Shared chrome is in `src/components/layout`. Copy is in `src/data/site.ts`. The `@/` alias points at `src/`.
+
+Use this when the client needs a new shape and none of the business UIs fit. Use a `ui-*` repo when the business already matches.
+
+```bash
+npm install
+npm run dev
+```
